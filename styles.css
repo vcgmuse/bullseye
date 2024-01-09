@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas1 {
+    background-image: url('./all_project_images/background.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* this makes the mouse events null so they don't interact or interfear with canvas mouse events.  */
+    pointer-events: none;
+}
+#obstacles, #bull, #egg, #toad, #toads,#toadskin, #larva, #larva_sprite, #barkskin {
+    display: none;
+}
